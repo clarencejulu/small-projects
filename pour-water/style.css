@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+:root{
+    --water: #74ccf4;
+    --deep-water: #2983cc;
+    --blue: #04406e;
+    --font-color: #ffffff;
+    font-size: 16px;
+}
+
+*{
+    /* margin: 0; */
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--deep-water);
+}
+
+h1, h2, p{
+    color: var(--font-color);
+    margin: 0.4rem;
+}
+h2{
+    letter-spacing: 0.1rem;
+}
+
+.water{
+    height: 18rem;
+    width: 9rem; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+    border-radius: 0 0 3rem 3rem;
+    border: 0.2rem solid var(--blue); 
+    overflow: hidden;
+    position: relative;
+}
+.water p{
+    color: var(--blue);
+    font-size: 0.8rem;   
+    margin: 0;
+}
+#remaining{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;    
+    transition: 0.3s ease;
+    margin: 0;
+}
+
+#remaining-value{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.percentage {
+    background-color: var(--water);
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2rem;
+    width: inherit; 
+    height: 0;
+    transition: 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+
+.cup{
+    border: 0.2rem solid var(--blue); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--font-color);
+}
+
+.small{
+    border-radius: 0 0 1rem 1rem;
+    margin: 1rem;
+    height: 5.7rem;
+    width: 3rem; 
+
+    border: 0.2rem solid var(--blue);
+    cursor: pointer;
+    position: relative;
+    
+    background-color: var(--water);
+}
+.small::before{
+    position: absolute;
+    top: 0.001rem;
+    content: "";
+    height: 0rem;
+    width: 2.7rem; 
+    border-radius: 0 0 0.84rem 0.84rem;
+    
+    transition: height 0.3s ease;
+}
+.small.active::before{
+    height: 5.4rem; 
+    background-color: var(--font-color);
+}
+
+.small p{
+    color: var(--blue);
+    text-align: center;
+    font-size: 0.85rem;
+   z-index: 1;
+}
+
+.cup-container{    
+    width: 20rem;
+    height: 15rem;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+@media(max-width: 400px){
+    .question{
+        width: 14rem;
+        text-align: center;
+    }
+}

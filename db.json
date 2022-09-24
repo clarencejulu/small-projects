@@ -1,0 +1,54 @@
+{
+    "projects": [
+        {
+            "name": "3d Boxes",
+            "description": "Click on the button at the top of the page and watch what happens to the image below!",
+            "link": "./3d-boxes/3d-boxes.html"
+        }, 
+        {
+            "name": "Animated Countdown",
+            "description": "A countdown animation",
+            "link": "./animated-countdown/animated-countdown.html"
+        },
+        {
+            "name": "Animated Navbar",
+            "description": "A Navbar that toggles open and close when clicked",
+            "link": "./animated-navbar/animated-navbar.html"
+        },
+        {
+            "name": "Checkboxes",
+            "description": "You really can't always get a product for cheap that is good and fast, something has to give...",
+            "link": "./checkboxes/checkboxes.html"
+        },
+        {
+            "name": "Drag and drop",
+            "description": "Drag the image around and place in any of the boxes",
+            "link": "./drag-and-drop/drag-and-drop.html"
+        },
+        {
+            "name": "Hoverboard Effect",
+            "description": "Hover around the board for a cool colorful effect",
+            "link": "./hoverboard-effect/hoverboard-effect.html"
+        },
+        {
+            "name": "Image Carousel",
+            "description": "This is a slide show for some images but you can also click through them",
+            "link": "./image-carousel/image-carousel.html"
+        },
+        {
+            "name": "Like Image",
+            "description": "Double Click this image to 'like' it",
+            "link": "./like-image/like-image.html"
+        },
+        {
+            "name": "Pour Water",
+            "description": "Click on a cup of water to pour it into the jar...",
+            "link": "./pour-water/pour-water.html"
+        },
+        {
+            "name": "Search Widget",
+            "description": "This is a hidden search widget that would expand once it's clicked.",
+            "link": "./search-widget/search-widget.html"
+        }
+    ]
+}

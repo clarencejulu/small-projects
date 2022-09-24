@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: rgb(24, 18, 18);
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(20, 13px);
+    row-gap: 4.5px;
+    column-gap: 5px;
+}
+
+.box{
+    z-index: 2;
+    background-color: rgb(45, 46, 42);
+    height: 13px;
+    width: 13px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* .box:hover{
+  transition duration 0s
+} */
+
+/* can use above instead of setTimeout */
+
+@media(max-width: 500px){
+    .box-container{
+        row-gap: 2.5px;
+        column-gap: 3px;
+    }
+    .box{
+        height: 12px;
+        width: 12px;
+    }
+}

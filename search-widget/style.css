@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+:root{
+    --grey: #eee;
+    --size: 18px;
+    --movement: width 0.6s ease;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 231, 10);
+    font-family: Nunito, sans-serif;
+}
+
+.container{
+    background-color: #fff;
+    /* width: 330px;   */ width: 41px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;  /* */
+    transition: var(--movement);
+    /* transform: translateX(-140px);  */
+}
+.searchbox{
+    height: inherit;
+    width: 41px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--grey);
+    font-size: var(--size);
+}
+.inputbox{
+    outline: none;
+    border: none;
+     /* width: 290px;       */ width: 0px;
+    font-family: inherit;
+    font-size: var(--size);
+    margin: 0; 
+    padding: 0; 
+    text-indent: 5px;
+    transition: var(--movement);
+}
+.container.show{
+    width: 330px;
+    transition: var(--movement);
+}
+.container.show > .inputbox{
+    width: 290px;
+    transition: var(--movement);
+}
+
+

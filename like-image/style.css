@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+
+:root{
+    font-size: 16px;
+    --bgc: rgb(180, 214, 253);
+    --font: rgb(68, 68, 68);
+    --green: rgb(100, 235, 82);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Readex Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background: linear-gradient(var(--bgc), var(--green));
+    color: var(--font);
+}
+h1{
+    font-size: 1.3rem;
+    text-align: center;
+}
+h1, .count{
+    margin: 0.8rem; 
+}
+
+
+.picture{
+    width: 550px;
+    height: 550px;
+
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    background: url('frank.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.heart{
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  position: absolute;   
+  transform: rotate(45deg) scale(0);
+  z-index: 2;
+  animation: scale 0.4s ease-in-out;
+  /*   */
+}
+
+.heart::before,.heart::after{
+    position: absolute;
+    content: '';
+         
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+      
+::before {
+    left: -15px;
+}     
+::after {
+    top: -15px;
+}
+
+@keyframes scale {
+    to {
+      transform: rotate(45deg) scale(3);
+      opacity: 0;
+    }
+}
+
+@media(max-width: 570px){
+    body{
+        justify-content: center;
+    }
+    .picture{
+        width: 350px;
+        height: 350px;
+    }
+}
+    
