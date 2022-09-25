@@ -2,17 +2,17 @@
     "projects": [
         {
             "name": "3d Boxes",
-            "description": "Click on the button at the top of the page and watch what happens to the image below!",
+            "description": "Click on the button at the top of the page and watch what happens to the image below! This project is unavailable on mobile and tab screen sizes.",
             "link": "./3d-boxes/3d-boxes.html"
         }, 
         {
             "name": "Animated Countdown",
-            "description": "A countdown animation",
+            "description": "A cool countdown animation",
             "link": "./animated-countdown/animated-countdown.html"
         },
         {
             "name": "Animated Navbar",
-            "description": "A Navbar that toggles open and close when clicked",
+            "description": "A Navbar  with a rotate animation that toggles open and close when clicked",
             "link": "./animated-navbar/animated-navbar.html"
         },
         {
@@ -22,12 +22,12 @@
         },
         {
             "name": "Drag and drop",
-            "description": "Drag the image around and place in any of the boxes",
+            "description": "Drag the image around and place in any of the boxes, For touchscreens - Place anywhere on the page",
             "link": "./drag-and-drop/drag-and-drop.html"
         },
         {
             "name": "Hoverboard Effect",
-            "description": "Hover around the board for a cool colorful effect",
+            "description": "Hover around the board for a cool colorful effect, For touchscreens - quickly tap around the board",
             "link": "./hoverboard-effect/hoverboard-effect.html"
         },
         {

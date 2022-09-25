@@ -1,8 +1,14 @@
 const fill = document.querySelector('.fill');
+const ssImage = document.querySelector('.smallScreenImage');
 const empties = document.querySelectorAll('.empty');
 
 fill.addEventListener('dragstart', dragStart);
 fill.addEventListener('dragend', dragEnd);
+ssImage.addEventListener('touchmove', function(event){
+    let touchLocation = event.targetTouches[0];
+    ssImage.style.left = touchLocation.clientX + 'px';
+    ssImage.style.top = touchLocation.clientY + 'px';
+});
 
 empties.forEach( empty => {
     empty.addEventListener('dragover', dragOver);
@@ -35,7 +41,7 @@ function dragLeave() {
     this.className = 'empty'; 
 }
 
-function  Drop() {
+function Drop() {
     this.className = 'empty'; 
     this.append(fill); 
 }

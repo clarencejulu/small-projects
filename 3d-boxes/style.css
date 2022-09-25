@@ -15,9 +15,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* overflow-x: hidden; */
 }
 
 .magic{
@@ -28,11 +28,8 @@ body{
     border-radius: 0.1875rem;
     padding: 0.75rem 1.25rem;
     cursor: pointer;
-    position: fixed;
-    top: 1.25rem;
-    letter-spacing: 1px;
     box-shadow: 0 0.1875rem var(--other-color);
-    z-index: 2; 
+    margin-top: 0.5rem;
 }
 .magic:focus{
     outline: none;
@@ -43,7 +40,7 @@ body{
 }
 
 .boxes{
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -102,6 +99,11 @@ h1{
 }
 
 @media(max-width: 600px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;  
+    }
     .boxes{
         display: none
     }

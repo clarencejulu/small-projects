@@ -25,10 +25,6 @@ boxes.forEach( box => { box.addEventListener('mouseout', () => {
         box.style.backgroundColor = 'rgb(45, 46, 42)'; 
         box.style.boxShadow = '0 0 2px rgb(45, 46, 42)';
     }, 1300);
-    // setTimeout( () => {
-    //     box.style.opacity = '0'}, 1000);
-    // setTimeout( () => {
-    //     box.style.opacity = '1'}, 1100);
 })})
 
 function pickRandomColor(){

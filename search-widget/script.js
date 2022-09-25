@@ -1,19 +1,23 @@
 const search = document.querySelector('.searchbox');
 const container = document.querySelector('.container');
 const input = document.querySelector('.inputbox');
+const body = document.body;
 let value = 0;
 
-search.addEventListener('click',  () => {
-    // container.classList.toggle('active')
-    input.focus(); 
+search.addEventListener('click',  () => {  
+    container.classList.toggle('show');
+    if(container.classList.contains('show')){
+        input.focus();
+    }
+    else{
+        input.removeAttribute('focus');
+    }
+})
 
-    //the above would allow me focus on the input as the search bar is clicked
-if(value == 0){
-    value++;
-     container.classList.add('show');
-}
-else{
-    value--;
-    container.classList.remove('show');
-}
+container.addEventListener('click',  (event) => {
+    event.stopPropagation();
+})
+
+body.addEventListener('click',  () => {
+    input.removeAttribute('focus');
 })
