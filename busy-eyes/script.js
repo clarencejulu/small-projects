@@ -1,11 +1,5 @@
 const eyes = document.querySelectorAll('.eye');
 
-//Get coordinates for the middle of the base image
-const main = document.getElementById('main');
-const rect = main.getBoundingClientRect();
-const mainX = rect.left + rect.width / 2;
-const mainY = rect.top + rect.height / 2;
-
 function angle(cx, cy, ax, ay){
     //calculate the angle between them
     const dy = ay - cy;
@@ -19,6 +13,12 @@ document.addEventListener('mousemove' || 'touchmove', (event) => {
     //Get position of cursor
     const mouseX = event.clientX; 
     const mouseY = event.clientY;
+
+    //Get coordinates for the middle of the base image
+    const main = document.getElementById('main');
+    const rect = main.getBoundingClientRect();
+    const mainX = rect.left + rect.width / 2;
+    const mainY = rect.top + rect.height / 2;
 
     const angleDegree = angle(mouseX, mouseY, mainX, mainY);
     eyes.forEach( eye => {

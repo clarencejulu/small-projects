@@ -103,17 +103,17 @@ button{
 }
 .nav.active .line1{
     /* transform: translateY(-0.2rem)rotate(0deg); this is happening on mobiles */
-    transform: rotate(0deg)
-    translateY(-0.2rem);
     -webkit-transform: rotate(0deg)
     translateY(-0.2rem);
     -ms-transform: rotate(0deg)
     translateY(-0.2rem);
+    transform: rotate(0deg)
+    translateY(-0.2rem);
 }
-.nav.active .line2{
-    transform: rotate(0deg) translateY(0.5rem); 
+.nav.active .line2{ 
     -webkit-transform: rotate(0deg) translateY(0.5rem);
     -ms-transform: rotate(0deg) translateY(0.5rem);
+    transform: rotate(0deg) translateY(0.5rem);
 }
 
 @media(max-width: 400px){
