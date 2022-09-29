@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background: linear-gradient(rgb(27, 51, 53), rgb(44, 160, 160));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative; 
+}
+main{
+    height: 31.25rem;
+    width: 37.5rem;
+    position: relative;
+    background-image: url('./images/rick-and-morty.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .eye{
+    position: absolute;
+    border-radius: 50%;
+    /* img is 44.64px */
+}
+
+img:nth-child(1){
+    top: 19.8125rem;
+    left: 12.5rem;
+}
+img:nth-child(2){
+    top: 19.25rem;
+    left: 16.875rem;
+}
+img:nth-child(3){
+    top: 10.0625rem;
+    left: 22.6875rem;
+}
+img:nth-child(4){
+    top: 10rem;
+    left: 26.5rem;
+}
+
+#attribution{
+    display: none;
+}
+
+@media(max-width: 750px){
+    :root{
+        font-size: 9px;
+    }
+    body{
+        padding: 3rem 0.5rem;
+    }
+    main .eye{
+        height: 25.11px;
+        width: 25.11px;
+    }
+}

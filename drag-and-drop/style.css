@@ -27,8 +27,8 @@ body{
 .fill{
     background: url('doggo.jpg');
     background-position: center -2rem;
-    width: 8.8rem;
-    height: 8.8rem;
+    width: 140.8px;
+    height: 140.8px;
     cursor: pointer;
 }
 
@@ -47,8 +47,8 @@ body{
     position: absolute;
     background: url('doggo.jpg');
     background-position: center -2rem;
-    width: 8.8rem;
-    height: 8.8rem;
+    width: 140.8px;
+    height: 140.8px;
     cursor: pointer;
 }
 @media(max-width: 800px){

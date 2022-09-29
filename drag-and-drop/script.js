@@ -4,10 +4,12 @@ const empties = document.querySelectorAll('.empty');
 
 fill.addEventListener('dragstart', dragStart);
 fill.addEventListener('dragend', dragEnd);
-ssImage.addEventListener('touchmove', function(event){
-    let touchLocation = event.targetTouches[0];
-    ssImage.style.left = touchLocation.clientX + 'px';
-    ssImage.style.top = touchLocation.clientY + 'px';
+ssImage.addEventListener('touchmove', event => {
+    const touchLocation = event.targetTouches[0];
+    const rect = ssImage.getBoundingClientRect();
+    // "touchLocation.clientX - rect.width / 2" - To move finger point from topleft to centre
+    ssImage.style.left = `${touchLocation.clientX - rect.width / 2}px`;
+    ssImage.style.top = `${touchLocation.clientY - rect.height / 2}px`;
 });
 
 empties.forEach( empty => {
@@ -18,7 +20,6 @@ empties.forEach( empty => {
 })
 
 function dragStart() {
-    // this.className += ' hold';
     this.classList.add('hold'); //add border for dragged image
     setTimeout(() => this.className = '', 0); 
     //timeout is important as it goes invisible immediately, we want to be able to drag.

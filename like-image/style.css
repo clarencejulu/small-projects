@@ -49,6 +49,8 @@ h1, .count{
   height: 30px;
   position: absolute;   
   transform: rotate(45deg) scale(0);
+  -webkit-transform: rotate(45deg) scale(0);
+  -ms-transform: rotate(45deg) scale(0);
   z-index: 2;
   animation: scale 0.4s ease-in-out;
   /*   */
@@ -74,6 +76,8 @@ h1, .count{
 @keyframes scale {
     to {
       transform: rotate(45deg) scale(3);
+      -webkit-transform: rotate(45deg) scale(3);
+      -ms-transform: rotate(45deg) scale(3);
       opacity: 0;
     }
 }

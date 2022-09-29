@@ -16,6 +16,11 @@
             "link": "./animated-navbar/animated-navbar.html"
         },
         {
+            "name": "Busy Eyes",
+            "description": "Moving your mouse could arouse these busy eyes, For touchscreens - tap around the screen",
+            "link": "./busy-eyes/busy-eyes.html"
+        },
+        {
             "name": "Checkboxes",
             "description": "You really can't always get a product for cheap that is good and fast, something has to give...",
             "link": "./checkboxes/checkboxes.html"
